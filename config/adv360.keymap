@@ -37,22 +37,22 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESCAPE     &kp N1            &kp N2        &kp N3    &kp N4     &kp N5  &bt BT_NXT                                                                   &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &kp SEMICOLON
-&kp LC(F4)     &kp Q             &kp W         &kp E     &kp R      &kp T   &mo 2                                                                        &mo 2      &kp Y   &kp U   &kp I      &kp O     &kp P      &kp RIGHT_BRACKET
-&kp LA(GRAVE)  &kp A             &kp S         &kp D     &kp F      &kp G   &tog 1      &kp LCTRL      &mkp RCLK         &kp PAGE_UP    &kp DEL          &tog 1     &kp H   &kp J   &kp K      &kp L     &kp MINUS  &kp SQT
-&kp TAB        &kp Z             &kp X         &kp C     &kp V      &kp B                              &kp LEFT_WIN      &kp PAGE_DOWN                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH   &kp RIGHT_ALT
-&kp LSHIFT     &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT  &kp RIGHT          &kp SPACE   &kp BACKSPACE  &kp F14           &kp F13        &kp RIGHT_SHIFT  &kp ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT   &kp RIGHT_SHIFT
+&kp ESCAPE  &kp N1            &kp N2        &kp N3    &kp N4     &kp N5  &bt BT_NXT                                                                             &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &kp SEMICOLON
+&kp LC(F4)  &kp Q             &kp W         &kp E     &kp R      &kp T   &mo 2                                                                                  &mo 2      &kp Y   &kp U   &kp I      &kp O     &kp P      &kp RIGHT_BRACKET
+&kp INT2    &kp A             &kp S         &kp D     &kp F      &kp G   &tog 1      &kp LCTRL      &mkp RCLK             &kp PAGE_UP          &kp DEL          &tog 1     &kp H   &kp J   &kp K      &kp L     &kp MINUS  &kp SQT
+&kp TAB     &kp Z             &kp X         &kp C     &kp V      &kp B                              &kp LEFT_WIN          &kp PAGE_DOWN                                    &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH   &kp RIGHT_ALT
+&kp LSHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT  &kp RIGHT          &kp SPACE   &kp BACKSPACE  &kp INT_MUHENKAN      &kp INTERNATIONAL_4  &kp RIGHT_SHIFT  &kp ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT   &kp RIGHT_SHIFT
             >;
         };
 
         keypad {
             display-name = "Kp";
             bindings = <
-&kp ESC         &kp N1            &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp KP_NUMLOCK  &kp N5     &bt BT_NXT                                                                   &mo 3      &kp A  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp LC(F4)      &kp Q             &kp LC(C)        &kp UP             &kp LC(V)       &kp T      &mo 2                                                                        &mo 2      &kp B  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp LA(GRAVE)   &kp A             &kp LEFT         &kp F2             &kp RIGHT       &kp LC(S)  &to 0       &kp LCTRL      &mkp RCLK         &kp PAGE_UP    &kp DEL          &to 0      &kp C  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp TAB         &kp Z             &kp X            &kp DOWN           &kp V           &kp B                                 &kp LEFT_WIN      &kp PAGE_DOWN                              &kp D  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_NUMBER_0  &kp RIGHT_ALT
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT     &kp LEFT           &kp RIGHT                  &kp SPACE   &kp BACKSPACE  &kp F14           &kp F13        &kp RIGHT_SHIFT  &kp ENTER         &kp UP      &kp DOWN      &kp KP_DOT     &kp COMMA        &kp RIGHT_SHIFT
+&kp ESC         &kp N1            &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp KP_NUMLOCK  &kp N5         &bt BT_NXT                                                                   &mo 3      &kp A            &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp LC(F4)      &kp Q             &kp LC(C)        &kp UP             &kp LC(V)       &kp LC(H)      &mo 2                                                                        &mo 2      &kp B            &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp INT2        &kp LCTRL         &kp LEFT         &kp F2             &kp RIGHT       &kp LC(S)      &to 0       &kp LCTRL      &mkp RCLK         &kp PAGE_UP    &kp DEL          &to 0      &kp C            &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&kp TAB         &kp Z             &kp X            &kp DOWN           &new_macro1     &kp LC(MINUS)                             &kp LEFT_WIN      &kp PAGE_DOWN                              &kp KP_NUMBER_0  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_NUMBER_0  &kp RIGHT_ALT
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT     &kp LEFT           &kp RIGHT                      &kp SPACE   &kp BACKSPACE  &kp INT5          &kp INT4       &kp RIGHT_SHIFT  &kp ENTER                   &kp UP      &kp DOWN      &kp KP_DOT     &kp COMMA        &kp RIGHT_SHIFT
             >;
         };
 
