@@ -29,6 +29,13 @@
             bindings = <&kp LEFT_ALT &kp H &kp V &kp V>;
             label = "NEW_MACRO1";
         };
+
+        new_macro2: new_macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp H &kp V &kp R>;
+            label = "NEW_MACRO2";
+        };
     };
 
     keymap {
@@ -48,11 +55,11 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&kp ESC         &kp N1            &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp KP_NUMLOCK  &kp N5         &bt BT_NXT                                                                   &mo 3      &kp A  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp MINUS
-&kp LC(F4)      &kp Q             &kp LC(C)        &mmv MOVE_UP       &kp LC(V)       &kp LC(H)      &mo 2                                                                        &mo 2      &kp B  &kp KP_N7   &kp KP_N8     &kp KP_N9        &kp KP_MINUS     &kp BSLH
-&kp LA(GRAVE)   &kp LCTRL         &kp LEFT         &kp F2             &kp RIGHT       &kp LC(S)      &to 0       &kp LCTRL      &mkp RCLK         &kp PAGE_UP    &kp DEL          &to 0      &kp C  &kp KP_N4   &kp KP_N5     &kp KP_N6        &kp KP_PLUS      &kp SQT
-&kp TAB         &kp Z             &kp LA(PLUS)     &kp DOWN           &new_macro1     &kp LC(MINUS)                             &kp LEFT_WIN      &kp PAGE_DOWN                              &kp D  &kp KP_N1   &kp KP_N2     &kp KP_N3        &kp PERIOD       &kp RIGHT_ALT
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT     &kp LEFT           &kp RIGHT                      &kp SPACE   &kp BACKSPACE  &kp LA(F12)       &kp LC(F12)    &kp RIGHT_SHIFT  &kp ENTER         &kp UP      &kp DOWN      &kp KP_NUMBER_0  &kp COMMA        &kp RIGHT_SHIFT
+&kp ESC         &kp LA(SEMI)      &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp KP_NUMLOCK   &kp LC(H)      &bt BT_NXT                                                                   &mo 3      &kp A  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp MINUS
+&kp LC(F4)      &mkp RCLK         &kp LC(C)        &mmv MOVE_UP       &kp LC(V)        &kp LC(PLUS)   &mo 2                                                                        &mo 2      &kp B  &kp KP_N7   &kp KP_N8     &kp KP_N9        &kp KP_MINUS     &kp BSLH
+&kp LA(GRAVE)   &mkp LCLK         &mmv MOVE_LEFT   &kp F2             &mmv MOVE_RIGHT  &kp LC(S)      &to 0       &kp LCTRL      &mkp RCLK         &kp PAGE_UP    &kp DEL          &to 0      &kp C  &kp KP_N4   &kp KP_N5     &kp KP_N6        &kp KP_PLUS      &kp SQT
+&kp TAB         &mkp MB4          &new_macro2      &mmv MOVE_DOWN     &new_macro1      &kp LC(MINUS)                             &kp LEFT_WIN      &kp PAGE_DOWN                              &kp D  &kp KP_N1   &kp KP_N2     &kp KP_N3        &kp PERIOD       &kp RIGHT_ALT
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT     &kp LEFT           &kp RIGHT                       &kp SPACE   &kp BACKSPACE  &kp LC(F11)       &kp LC(F12)    &kp RIGHT_SHIFT  &kp ENTER         &kp UP      &kp DOWN      &kp KP_NUMBER_0  &kp COMMA        &kp RIGHT_SHIFT
             >;
         };
 
