@@ -44,11 +44,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESCAPE  &kp N1            &kp N2        &kp N3    &kp N4     &kp N5  &bt BT_NXT                                                                   &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &kp SEMICOLON
-&kp LC(F4)  &kp Q             &kp W         &kp E     &kp R      &kp T   &mo 2                                                                        &mo 2      &kp Y   &kp U   &kp I      &kp O     &kp P      &kp UNDERSCORE
-&kp EQUAL   &kp A             &kp S         &kp D     &kp F      &kp G   &tog 0      &kp LCTRL      &kp HOME          &kp PAGE_UP    &kp DEL          &tog 1     &kp H   &kp J   &kp K      &kp L     &kp MINUS  &kp SQT
-&kp TAB     &kp Z             &kp X         &kp C     &kp V      &kp B                              &kp LEFT_WIN      &kp PAGE_DOWN                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH   &kp RIGHT_ALT
-&kp LSHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT  &kp RIGHT          &kp SPACE   &kp BACKSPACE  &bt BT_NXT        &kp LA(GRAVE)  &kp RIGHT_SHIFT  &kp ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT   &kp RIGHT_SHIFT
+&kp ESCAPE  &kp N1            &kp N2        &kp N3    &kp N4     &kp N5  &to 3                                                                       &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &kp SEMICOLON
+&kp LC(F4)  &kp Q             &kp W         &kp E     &kp R      &kp T   &mo 2                                                                       &mo 2      &kp Y   &kp U   &kp I      &kp O     &kp P      &kp UNDERSCORE
+&kp EQUAL   &kp A             &kp S         &kp D     &kp F      &kp G   &tog 0     &kp LCTRL      &kp HOME          &kp PAGE_UP    &kp DEL          &tog 1     &kp H   &kp J   &kp K      &kp L     &kp MINUS  &kp SQT
+&kp TAB     &kp Z             &kp X         &kp C     &kp V      &kp B                             &kp LEFT_WIN      &kp PAGE_DOWN                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH   &kp RIGHT_ALT
+&kp LSHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT  &kp RIGHT          &kp SPACE  &kp BACKSPACE  &bt BT_NXT        &kp LA(GRAVE)  &kp RIGHT_SHIFT  &kp ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT   &kp RIGHT_SHIFT
             >;
         };
 
@@ -77,11 +77,11 @@
         mod {
             display-name = "Mod";
             bindings = <
-&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans           &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &none         &none         &bootloader                                            &bootloader      &none  &none       &none       &none  &none  &none
-&studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none           &none         &none   &none   &none   &none  &to 0                                                  &trans           &none  &none       &none       &none  &none  &none
+&none           &kp M         &kp E   &kp W   &kp B   &none  &bootloader                                            &bootloader      &none  &none       &none       &none  &none  &none
+&studio_unlock  &kp F         &kp A   &kp S   &kp D   &none  &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
+&none           &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &none                      &none      &none                                    &none  &none       &none       &none  &none  &none
+&none           &none         &none   &none   &none          &kp T        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
 
